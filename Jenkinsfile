@@ -16,6 +16,7 @@ node {
 			sh 'apk add py-pip'
 			sh 'pip install virtualenv'
 			sh 'pip install nose'
+			sh 'find / -name nosetests'
 		}
 		
         stage("Install Requirements") {
