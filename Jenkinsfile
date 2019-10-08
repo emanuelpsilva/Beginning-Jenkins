@@ -12,7 +12,7 @@ node {
 		}
 		
 		stage("Install virtualenv"){
-			sh 'python -m pip install --user --upgrade pip'
+			sh 'easy_install pip'
 			sh 'pip3 install virtualenv'
 		}
 		
