@@ -11,6 +11,10 @@ node {
 			sh 'apk add make'
 		}
 		
+		stage("Install virtualenv"){
+			sh 'apk add virtualenv'
+		}
+		
         stage("Install Requirements") {
             sh 'make install'
         }
