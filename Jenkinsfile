@@ -6,6 +6,11 @@ node {
     }
 
     dir('Lesson5/ActivityA') {
+		
+		stage("Install make"){
+			sh 'apk add make'
+		}
+		
         stage("Install Requirements") {
             sh 'make install'
         }
