@@ -4,5 +4,5 @@ install:
 	pip install --user -r requirements.txt
 
 jenkins_test:
-	python `which nosetests`
+	ls -la testing
 	testing/bin/nosetests app/ -v
