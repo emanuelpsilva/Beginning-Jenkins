@@ -12,7 +12,7 @@ node {
 		}
 		
 		stage("Install virtualenv"){
-			sh 'easy_install pip'
+			sh 'apk add python-pip'
 			sh 'pip3 install virtualenv'
 		}
 		
